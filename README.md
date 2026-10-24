@@ -96,6 +96,7 @@ person — so the approver knows precisely what they are signing.
 | Skill | Use it when | Produces |
 | --- | --- | --- |
 | [`define-business-term`](skills/define-business-term/SKILL.md) | Someone asks you to define, propose, review or disambiguate a business term — or two teams use the same word differently | A term proposal: definition, boundary, examples, disambiguation, ownership, flags, approval verdict |
+| [`write-data-descriptions`](skills/write-data-descriptions/SKILL.md) | Someone asks you to write, review or bulk-fill descriptions for a table or column — or an AI assistant keeps choosing the wrong one | A description proposal: grain and key, per-column meaning, units, domain values, null semantics, caveats, swap test, evidence tier per object |
 
 Full catalogue, backlog and routing tests: **[SKILLS.md](SKILLS.md)**.
 
@@ -218,9 +219,9 @@ confidently wrong.
 
 ## Roadmap
 
-Shipped: `define-business-term`, the reference implementation for everything below.
+Shipped: `define-business-term` and `write-data-descriptions`, the reference implementations
+for everything below — one for a business concept, one for the metadata on a physical object.
 
-- `write-data-descriptions` — highest volume, lowest glamour, biggest catalogue-hygiene win
 - `triage-data-quality-incident` — symptom, blast radius, root cause, owner, remediation, SLA
 - `classify-sensitive-data` — classification with regulatory basis and handling requirements
 - `assess-data-fit-for-ai-use-case` — licensing, consent, representativeness, PII, retention
