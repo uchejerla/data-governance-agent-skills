@@ -120,6 +120,7 @@ tool is not.
 │   └── adapters/                    installable tool adapters (planned)
 ├── standards/                       shared reference — not installable
 ├── scripts/validate_skills.py       repository checks, run by CI
+├── tests/                           regression tests for the validator
 ├── .github/workflows/               validation on every pull request
 ├── SKILLS.md                        routing index
 └── README.md
@@ -240,6 +241,7 @@ Run the same checks CI runs before opening a pull request:
 
 ```bash
 python -m pip install pyyaml
+python -m unittest discover -s tests -v   # the validator's own tests
 python scripts/validate_skills.py
 ```
 
@@ -247,6 +249,9 @@ It verifies frontmatter and required fields, that `name` matches its directory a
 kebab-case, description length, semver and review dates, every relative link and heading
 anchor, files referenced in backticks, duplicate names, and that each skill is linked from
 `SKILLS.md`. The workflow fails on errors; warnings are printed but do not block.
+
+The tests build throwaway repositories that break one rule each, so a rule cannot quietly
+stop firing. If you change or add a check, add the failing fixture for it.
 
 ## License
 
