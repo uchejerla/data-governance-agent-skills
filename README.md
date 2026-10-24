@@ -8,9 +8,9 @@
 not fluent text that falls apart under review.</p>
 
 <p>
+  <a href="https://github.com/uchejerla/data-governance-agent-skills/actions/workflows/validate-skills.yml"><img alt="Validate skills" src="https://github.com/uchejerla/data-governance-agent-skills/actions/workflows/validate-skills.yml/badge.svg"></a>
   <a href="https://agentskills.io"><img alt="Agent Skills format" src="https://img.shields.io/badge/format-SKILL.md-6E56CF?style=flat-square"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-2EA44F?style=flat-square"></a>
-  <a href="#install"><img alt="Install with npx skills" src="https://img.shields.io/badge/npx%20skills%20add-uchejerla%2Fdata--governance--agent--skills-000000?style=flat-square"></a>
   <a href="#contributing"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-8957E5?style=flat-square"></a>
 </p>
 
