@@ -65,7 +65,7 @@ across a table.
 | Tier | Basis | Publishable |
 | --- | --- | --- |
 | **A — verified** | `observed` from constraints or full-domain checks, or `documented`, or `asserted` by the owner | Yes, after owner review |
-| **B — derived** | Consistent evidence from schema, sampling and lineage, with no confirmation | No — review queue |
+| **B — derived** | Consistent with schema, sampling, lineage or the naming convention, but unconfirmed | No — review queue |
 | **C — deferred** | Meaning cannot be established from available evidence | No — named owner required |
 
 An `inferred` description is a hypothesis at tier B at best. Ten consistent guesses do not

@@ -179,8 +179,9 @@ them is 400 hypotheses, and the plausible ones will be adopted.
 - **Batch by table**, never by column type or alphabetically. Grain and context are per
   table, and a reviewer can only approve a table they know.
 - **Tier every object.** `A — verified` (evidence plus an owner or documented source),
-  `B — derived` (good evidence, no confirmation; goes to a review queue), `C — deferred`
-  (cannot be established; needs the owner). Only A is publishable.
+  `B — derived` (consistent with the available evidence, including an inferred meaning, but
+  unconfirmed; goes to review), `C — deferred` (cannot be established; needs the owner). Only A
+  is publishable.
 - **Report real coverage.** "28 verified, 9 derived, 3 deferred of 40" — never "40 described".
   The second number is the one that ends up in a data-quality dashboard and gets believed.
 - **Keep the deferred list.** It is a routing document, not an admission of failure: a named
