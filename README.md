@@ -119,6 +119,8 @@ tool is not.
 │   │   └── assets/                  the template the skill fills in
 │   └── adapters/                    installable tool adapters (planned)
 ├── standards/                       shared reference — not installable
+├── scripts/validate_skills.py       repository checks, run by CI
+├── .github/workflows/               validation on every pull request
 ├── SKILLS.md                        routing index
 └── README.md
 ```
@@ -233,6 +235,18 @@ from real failures, not from templates.
 
 Match the conventions above. A pull request that adds a skill without examples, or that
 writes to a catalog without a confirmation step, will be asked to change.
+
+Run the same checks CI runs before opening a pull request:
+
+```bash
+python -m pip install pyyaml
+python scripts/validate_skills.py
+```
+
+It verifies frontmatter and required fields, that `name` matches its directory and is
+kebab-case, description length, semver and review dates, every relative link and heading
+anchor, files referenced in backticks, duplicate names, and that each skill is linked from
+`SKILLS.md`. The workflow fails on errors; warnings are printed but do not block.
 
 ## License
 
